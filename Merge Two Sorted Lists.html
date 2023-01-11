@@ -9,6 +9,33 @@
   let list2 = [1, 2, 4];
   // [1,1,2,3,4,4]
 
+  function mergeArray(nums1,m,nums2,n){
+    
+            for(let i = 0; i < n; i++) {
+        nums1[i + m] = nums2[i]
+    }
+    
+    nums1.sort((a, b) => a - b);
+    
+  }
+  
+  console.log(mergeArray(nums1,3,nums2,3));
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   function mergeList(list1, list2) {
     let arr = [...list1, ...list2];
     let newArr = [];
